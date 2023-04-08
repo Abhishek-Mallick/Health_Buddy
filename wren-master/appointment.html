@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="appointment.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../assets/logo.png" alt="hndi" height="55px" />
+        <ul>
+          <li><a href="../index.html">home</a></li>
+          <li>
+            <a class="nav_active" href="./appointment.html">appointment</a>
+          </li>
+          <li><a href="./contact.html">contact</a></li>
+          <li><a href="#">feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="app_sec">
+      <form>
+        <div class="input">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="input">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="input">
+          <label for="doctor">Doctor:</label>
+          <select id="doctor" name="doctor" required>
+            <option value="">--Select Doctor--</option>
+            <option value="Dr. Smith">Dr. Smith</option>
+            <option value="Dr. Jones">Dr. Jones</option>
+            <option value="Dr. Patel">Dr. Patel</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="input">
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
+        </div>
+        <div class="input">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <div class="input__a">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

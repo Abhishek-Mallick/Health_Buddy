@@ -1,0 +1,172 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  body{
+    background-image: linear-gradient(60deg, #0f1729);
+  }
+  .image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .heading {
+          
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  
+  :root {
+    --blue: #0071FF;
+    --light-blue: #B6DBF6;
+    --dark-blue: #005DD1;
+    --grey: #f2f2f2;
+  }
+  
+  .image-container {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  
+  .box{
+    width: 400px;
+    height: 300px;
+    
+    margin: 10px auto;
+    object-fit: cover;
+    display: relative;
+    
+    align-items: center;
+  
+  }
+        /* Style the label for the input file */
+       
+        .label {
+          position: relative;
+          /*center it*/
+          left: 25%;
+          font-size: 1rem;
+          font-weight: bold;
+          color: rgba(211, 194, 194, 0.837);
+        
+          box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+          margin-bottom: 20px;
+        }
+  
+  .img-area {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: var(--grey);
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .img-area .icon {
+    font-size: 100px;
+  }
+  
+  .img-area h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  
+  .img-area p {
+    color: #999;
+  }
+  
+  .img-area p span {
+    font-weight: 600;
+  }
+  
+  .img-area img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 100;
+  }
+  
+  .img-area::before {
+    content: attr(data-img);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: 200;
+  }
+  
+  .img-area.active:hover::before {
+    opacity: 1;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .select-image {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 15px;
+    background: var(--blue);
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+  
+  .select-image:hover {
+    background: var(--dark-blue);
+  }
