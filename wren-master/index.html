@@ -9,7 +9,7 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Wren - Perosonal Blog Website</title>
+  <title>Health-Buddy - The ultimate healthcare companion</title>
   <meta name="title" content="Health-Buddy - The ultimate healthcare companion">
   <meta name="description" content="A personal health care assitant">
 
@@ -40,7 +40,39 @@
 
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 </head>
-
+<style>
+  .footer-list {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .footer-list-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .hover-2:hover {
+    color: #f63;
+  }
+  
+</style>
 <body id="top">
 
   <!-- 
@@ -87,8 +119,13 @@
           </li>
 
           <li>
+            <a href="doctormap.html" class="navbar-link hover-1" data-nav-toggler>Doctors Near Me</a>
+          </li>
+          
+          <li>
             <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Feedback</a>
           </li>
+
         </ul>
 
         <div class="navbar-bottom">
@@ -312,163 +349,73 @@
         </div>
       </section>
 
-
       <footer>
         <div class="container">
-    
           <div class="card footer">
-    
+
             <div class="section footer-top">
-    
+          
               <div class="footer-brand">
-    
+          
                 <a href="#" class="logo">
-                  <img src="./assets/images/logo.svg" width="119" height="37" loading="lazy" alt="Wren logo">
+                  <img src="./assets/images/logo.svg" width="119" height="37" loading="lazy" alt="Health Buddy logo">
                 </a>
-    
+          
                 <p class="footer-text">
-                  When an unknown prnoto sans took a galley and scrambled it to make specimen book not only five When an
-                  unknown prnoto sans took a galley and scrambled it to five centurie.
+                  Health Buddy is a platform that provides various healthcare services including tumor detection, retina scanning, lung detection, and patient report analysis. Our mission is to help people live healthier lives.
                 </p>
-    
-                <p class="footer-list-title">Address</p>
-    
-                <address class="footer-text address">
-                  123 Main Street <br>
-                  New York, NY 10001
-                </address>
-    
+          
               </div>
-    
+          
               <div class="footer-list">
-    
-                <p class="footer-list-title">Categories</p>
-    
+          
+                <p class="footer-list-title">Services</p>
+          
                 <ul>
-    
                   <li>
-                    <a href="#" class="footer-link hover-2">Action</a>
+                    <a href="#" class="footer-link hover-2">Tumor Detection</a>
                   </li>
-    
                   <li>
-                    <a href="#" class="footer-link hover-2">Business</a>
+                    <a href="#" class="footer-link hover-2">Retina Scanning</a>
                   </li>
-    
                   <li>
-                    <a href="#" class="footer-link hover-2">Adventure</a>
+                    <a href="#" class="footer-link hover-2">Lung Detection</a>
                   </li>
-    
                   <li>
-                    <a href="#" class="footer-link hover-2">Canada</a>
+                    <a href="#" class="footer-link hover-2">Patient Report Analysis</a>
                   </li>
-    
-                  <li>
-                    <a href="#" class="footer-link hover-2">America</a>
-                  </li>
-    
-                  <li>
-                    <a href="#" class="footer-link hover-2">Curiosity</a>
-                  </li>
-    
-                  <li>
-                    <a href="#" class="footer-link hover-2">Animal</a>
-                  </li>
-    
-                  <li>
-                    <a href="#" class="footer-link hover-2">Dental</a>
-                  </li>
-    
-                  <li>
-                    <a href="#" class="footer-link hover-2">Biology</a>
-                  </li>
-    
-                  <li>
-                    <a href="#" class="footer-link hover-2">Design</a>
-                  </li>
-    
-                  <li>
-                    <a href="#" class="footer-link hover-2">Breakfast</a>
-                  </li>
-    
-                  <li>
-                    <a href="#" class="footer-link hover-2">Dessert</a>
-                  </li>
-    
                 </ul>
-    
+          
               </div>
-    
+          
               <div class="footer-list">
-    
-                <p class="footer-list-title">Newsletter</p>
-    
-                <p class="footer-text">
-                  Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.
-                </p>
-    
-                <div class="input-wrapper">
-                  <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
-    
-                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-                </div>
-    
-                <div class="input-wrapper">
-                  <input type="email" name="email_address" placeholder="Emaill address" required class="input-field"
-                    autocomplete="off">
-    
-                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-                </div>
-    
-                <a href="#" class="btn btn-primary">
-                  <span class="span">Subscribe</span>
-    
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
-    
+          
+                <p class="footer-list-title">Team Members</p>
+          
+                  <li>
+                    <a href="https://www.linkedin.com/in/abhisheksharma7389/" target="_blank" class="footer-link hover-2">Abhishek Sharma (Mentor)</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Abhishek-Mallick" target="_blank" class="footer-link hover-2">Abhishek Mallick</a>
+                  </li>
+                </ul>
+                  <ul></ul>
+                  <li>
+                    <a href="https://github.com/Alpha-022" target="_blank" class="footer-link hover-2">Saurav Bansode</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Abhishek-kumar-202063" target="_blank" class="footer-link hover-2">Abhishek Prajapati</a>
+                  </li>
+                </ul>
+          
               </div>
-    
+          
+          
             </div>
-    
-            <div class="footer-bottom">
-    
-              <p class="copyright">
-                &copy; Developed by <a href="#" class="copyright-link">codewithsadee.</a>
-              </p>
-    
-              <ul class="social-list">
-    
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
-    
-                    <span class="span">Twitter</span>
-                  </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-    
-                    <span class="span">LinkedIn</span>
-                  </a>
-                </li>
-    
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
-    
-                    <span class="span">Instagram</span>
-                  </a>
-                </li>
-    
-              </ul>
-    
-            </div>
-    
           </div>
-    
         </div>
       </footer>
+          
 
 
 
