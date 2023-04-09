@@ -5,6 +5,13 @@ body {
     /* background-image: linear-gradient(to right, #a0b3c4 10%, #d3dedc 90%); */
     background-image: linear-gradient(60deg, #0f1729);
   }
+  .navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+  }
   .m_flex {
     display: flex;
     align-items: center;
