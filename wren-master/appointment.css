@@ -1,5 +1,20 @@
+#date,
+#time {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
 .app_sec {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    margin-top: 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
