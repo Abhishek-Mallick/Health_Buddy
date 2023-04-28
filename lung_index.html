@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Buddy</title>
+  <link rel="stylesheet" href="lung_style.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <style>
+    body{
+    background-color: #0f1729;
+    }
+  </style>
+  
+  
+  <div class="container">
+    <h1 class="heading">Lung Disease Detection</h1>
+    <div class="box">
+      <div class="label" id="label-container"></div>
+      <input class="file-input" type="file" id="file" accept="image/*" hidden>
+
+      <div id="label-container"></div>
+      <div class="img-area" data-img="">
+        <i class='bx bxs-cloud-upload icon'></i>
+        <h3>Upload Image</h3>
+        <p>Image size must be less than <span>2MB</span></p>
+      </div>
+      <button class="select-image">Select Image</button>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src= "lung_script.js"></script> 
+
+
+
+</body>
+
+</html>

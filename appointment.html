@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appointment.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Health-Buddy - Shedule appointment </title> 
+</head>
+<body>
+    <div class="container">
+        <header>Appointment</header>
+
+        <form
+  action="https://formspree.io/f/mayzlqkj"
+  method="POST"
+>
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Patient Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="Full Name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="Date of Birth" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" name="Email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" name="Mobile Number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="Gender" required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" name="Occupation" placeholder="Enter your ccupation" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Appointment Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Department</label>
+                            <select name="Department" required>
+                                <option disabled selected>Select Department</option>
+                                <option>Cardiology</option>
+                                <option>Neurology</option>
+                                <option>Oncology</option>
+                                <option>Orthopedics</option>
+                                <option>Pediatrics</option>
+                                <option>Radiology</option>
+                                <option>Gynecology</option>
+                                <option>Ophthalmology</option>
+                                <option>Dermatology</option>
+                                <option>Psychiatry</option>
+                                <option>Anesthesiology</option>
+                                <option>Endocrinology</option>
+                                <option>Rheumatology</option>
+                                <option>Urology</option>
+
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Location</label>
+                            <input type="text" name="Location" placeholder="Enter preffered location" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>History</label>
+                            <input type="text" name="History" placeholder="Enter previous medical history" required>
+                        </div>
+
+                         <div class="input-field">
+                            <label>Issue</label>
+                            <input type="text" name="Issue" placeholder="Enter current health issue" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date</label>
+                            <input type="date" name="Date" placeholder="Select appointment date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Time</label>
+                            <input type="time" name="Time" placeholder="Choose preffered time" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn" type="submit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+  
+        </form>
+    </div>
+
+<!--     <script src="script.js"></script> -->
+</body>
+</html>

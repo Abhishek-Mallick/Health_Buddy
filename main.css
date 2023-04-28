@@ -1,0 +1,116 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* background-image: linear-gradient(to right, #a0b3c4 10%, #d3dedc 90%); */
+    background-image: linear-gradient(60deg, #0f1729);
+  }
+  .navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+  }
+  .tooltip {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.show-tooltip .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+  .m_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav_active {
+    color: #34bc92;
+    /* font-size: larger; */
+    font-weight: 700;
+  }
+  
+  nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    list-style: none;
+  }
+  nav ul a {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  .nav_active:hover {
+    color: #34bc92;
+    /* font-size: larger; */
+  }
+  .home_sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    /* border: 1px solid blue; */
+    height: 80vh;
+  }
+  
+  .main_text h1 {
+    width: 75%;
+    font-size: 100px;
+    /* border: 1px solid beige; */
+  }
+  
+  .btn,
+  .btn:hover {
+    border: none;
+    gap: 10px;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    font-size: medium;
+    text-transform: capitalize;
+    background-color: #31c498;
+    box-shadow: 0px 1px 5px #000;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-family: "PT Serif", serif;
+  }
+  .btn_arr {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  

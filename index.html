@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Health-Buddy - The ultimate healthcare companion</title>
+  <meta name="title" content="Health-Buddy - The ultimate healthcare companion">
+  <meta name="description" content="A personal health care assitant">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets\images\title.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets\images\hospital-login.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+</head>
+<style>
+  .footer-list {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .footer-list-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .hover-2:hover {
+    color: #f63;
+  }
+  
+</style>
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+  <df-messenger
+  intent="WELCOME"
+  chat-title="HealthBuddy"
+  agent-id="31a00028-252e-455b-aa20-4b834bf85a25"
+  language-code="en"
+></df-messenger>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="160" height="46" alt="Health Buddy">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="160" height="46" alt="Heath Buddy">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="/index.html" class="navbar-link hover-1" data-nav-toggler>Home</a>
+          </li>
+
+          <li>
+            <a href="/appointment.html" class="navbar-link" data-nav-toggler>Appointment</a>
+          </li>          
+
+          <li>
+            <a href="/contact1.html" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link hover-1" id="doctors-link">Doctors Near Me</a>
+          </li>
+
+           <li>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjrOVqQk_65ywZNGShHubc1eibTaMHyE-vkvCTHBlzig0aNw/viewform?embedded=true" class="navbar-link hover-1" data-nav-toggler>Feedback</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-bottom">
+
+          <div class="profile-card">
+            <img src="./assets/images/author-1.png" width="48" height="48" alt="Steven" class="profile-banner">
+
+            <div>
+              <p class="card-title">Hello Steven !</p>
+
+              <p class="card-subtitle">
+                You have 3 new messages
+              </p>
+            </div>
+          </div>
+
+          <ul class="link-list">
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">Profile</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">Articles Saved</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">Add New Post</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">My Likes</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">Account Setting</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">Sign Out</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Hello Everyone!</p>
+
+            <h1 class="headline headline-1 section-title">
+              I'm <span class="span">Health Buddy</span>
+            </h1>
+
+            <p class="hero-text">
+              Take control of your health journey with Health-Buddy - the intelligent tool that streamlines every step, from diagnosis to treatment and beyond.
+            </p>
+
+            <!-- <div class="input-wrapper">
+
+              <input type="email" name="email_address" placeholder="Type your email address" required
+                class="input-field" autocomplete="off">
+
+              <button class="btn btn-primary">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div> -->
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="assets\images\hospital-login.png" width="327" height="490" alt="Health Buddy" class="w-100">
+
+            <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+
+            <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+
+          </div>
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOPICS
+      -->
+
+      <section class="topics" id="topics" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card">
+
+            <div class="card-content">
+
+              <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                We offer
+              </h2>
+
+              <p class="card-text">
+                More features comming soon..
+              </p>
+
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-list" data-slider-container>
+
+                <li class="slider-item">
+                  <a href="tumor.html" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/brain.png" width="507" height="618" loading="lazy" alt="Sport"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Brain Tumor Detection</span>
+
+                      <p class="slider-subtitle">CT scan diagnosis made easy - simply upload your scans and let our brain tumor detector do the rest </p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="/eye_index.html" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="assets\images\eye.jpeg" width="507" height="618" loading="lazy" alt="Travel"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Eye Disease Detection</span>
+
+                      <p class="slider-subtitle">Easy uploads, life-changing results - our eye disease detector simplifies the process and delivers accurate, reliable outcomes."</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="/lung_index.html" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="assets\images\Lung-image.jpg" width="507" height="618" loading="lazy" alt="Movie"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Lung Disease Detector</span>
+
+                      <p class="slider-subtitle">Comming soon..</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="assets\images\report.jpg" width="507" height="618" loading="lazy" alt="Design"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Patient Report Analyzer</span>
+
+                      <p class="slider-subtitle">Comming Soon..</p>
+                    </div>
+
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="card footer">
+
+            <div class="section footer-top">
+          
+              <div class="footer-brand">
+          
+                <a href="#" class="logo">
+                  <img src="./assets/images/logo.png" width="160" height="46" loading="lazy" alt="Health Buddy logo">
+                </a>
+          
+                <p class="footer-text">
+                  Health Buddy is a platform that provides various healthcare services including tumor detection, retina scanning, lung detection, and patient report analysis. Our mission is to help people live healthier lives.
+                </p>
+          
+              </div>
+          
+              <div class="footer-list">
+          
+                <p class="footer-list-title">Services</p>
+          
+                <ul>
+                  <li>
+                    <a href="#" class="footer-link hover-2">Tumor Detection</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer-link hover-2">Retina Scanning</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer-link hover-2">Lung Detection</a>
+                  </li>
+                  <li>
+                    <a href="#" class="footer-link hover-2">Patient Report Analysis</a>
+                  </li>
+                </ul>
+          
+              </div>
+          
+              <div class="footer-list">
+          
+                <p class="footer-list-title">Team Members</p>
+          
+                  <li>
+                    <a href="https://www.linkedin.com/in/abhisheksharma7389/" target="_blank" class="footer-link hover-2">Abhishek Sharma (Mentor)</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Abhishek-Mallick" target="_blank" class="footer-link hover-2">Abhishek Mallick</a>
+                  </li>
+                </ul>
+                  <ul></ul>
+                  <li>
+                    <a href="https://github.com/Alpha-022" target="_blank" class="footer-link hover-2">Saurav Bansode</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Abhishek-kumar-202063" target="_blank" class="footer-link hover-2">Abhishek Prajapati</a>
+                  </li>
+                </ul>
+          
+              </div>
+          
+          
+            </div>
+          </div>
+        </div>
+      </footer>
+          
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
