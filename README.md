@@ -11,6 +11,8 @@ The project's future plans include integrating more advanced features, such as a
 
 The project is open to contributions from developers who wish to improve its functionality or add new features. To contribute, you can clone the repository using the git clone command, make changes to the code, and push the changes to the repository using git push command.
 
+https://health-buddy-nine.vercel.app/
+
 ### Techstacks
 
 The following technologies have been used to develop the Health Buddy web application:
